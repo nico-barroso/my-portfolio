@@ -2,10 +2,15 @@ import "./ProjectCard.css";
 
 export const ProjectCard = (project) => `
 <div class="project-card">
-<img src=${project.image} alt=${project.title}/>
+<div class=media-container>
+<!--<img src=${project.image} alt=${project.title}/>-->
+<video muted loop>
+  <source src=${project.videoImg} type="video/mp4">
+</video>
+</div>
 <div class="header">
 <h2>${project.title}</h2>
-<div>
+<div class="icons">
 <a href=${project.github}>
 <img src="/icons/github-icon.jpg" alt="GitHub Icon" />
 </a>

@@ -9,8 +9,8 @@ import { Divider } from "./components/Divider/Divider";
 
 const header = document.querySelector("header");
 header.innerHTML = Navbar();
-const footer = document.querySelector("footer");
-footer.innerHTML = Footer();
+// const footer = document.querySelector("footer");
+// footer.innerHTML = Footer();
 
 linkPage("#homelink", Home);
 linkPage("#projectslink", Projects);
@@ -19,4 +19,4 @@ Home();
 
 changeTheme();
 
-footer.insertAdjacentHTML("beforebegin", Divider());
+//footer.insertAdjacentHTML("beforebegin", Divider());

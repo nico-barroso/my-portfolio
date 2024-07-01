@@ -9,7 +9,7 @@ export const Projects = () => {
   cleanPage(main);
   main.innerHTML = `
     <section class="projects">
-    <h2>Featured Projects</h2>
+    <h2>Proyectos principales</h2>
     ${Divider()}
     <div class="projects-container"></div>
     </section>`;
@@ -19,4 +19,29 @@ export const Projects = () => {
     figure.innerHTML = ProjectCard(project);
     container.appendChild(figure);
   }
+
+  function projectHover() {
+    const container = document.querySelectorAll(".projects-container figure");
+    const videos = document.querySelectorAll("video"); // Select all video elements
+
+    console.log(container);
+    container.forEach((element, index) => {
+      console.log(element);
+      console.log(index);
+      const video = videos[index]; // Get the corresponding video for this element
+
+      element.addEventListener("mouseover", () => {
+        video.play();
+      });
+
+      element.addEventListener("mouseout", () => {
+        video.pause();
+        video.currentTime = 0;
+      });
+    });
+  }
+
+  projectHover();
+  const footer = document.querySelector("footer");
+  footer.innerHTML = "";
 };

@@ -1,14 +1,20 @@
 import "./Home.css";
 import { cleanPage } from "../../utils/cleanPage";
+import { Footer } from "../../components/Footer/Footer";
 
 export const Home = () => {
   const main = document.querySelector("main");
   cleanPage(main);
   main.innerHTML = `
     <section class="home">
-    <p>Hey, I'm</p>
-    <h1>Peter Parker</h1>
-    <p>I'm a software engineer based in Toronto, Canada and also a communication and journalism student. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. I have been freelancing for a year now while studying at the university and I've manage to gain a decent amount of experience and valuable knowledge from all different kinds of fields throughout my projects/work.</p>
-    <a href="mailto:peterparker@gmail.com">Say hi →</a>
+    <p>Hola, soy</p>
+    <h1>Nico Barroso</h1>
+<p>Soy un desarrollador de software en España, especializado en el diseño y desarrollo de productos. Me apasiona crear productos interactivos que mejoren la vida de las personas o cuenten historias. He trabajado en diversos proyectos de comunicación y consumo desde la universidad, adquiriendo un amplio conocimiento en mi campo. Actualmente, estoy perfeccionando mis habilidades con un técnico en desarrollo de aplicaciones y una especialización en Full-Stack.</p>   
+    <a href="mailto:josenicolasbarrosogarcia@gmail.com"><img class="mail-icon" src="./assets/mail-svgrepo-com.svg" alt="Icono de correo">¡No te olvides de decir hola! →</a>
+<video autoplay loop muted>
+    <source src="assets/PruebaPatoHVEC-1.mov" type="video/mp4"/> 
+</video>
     </section>`;
+  const footer = document.querySelector("footer");
+  footer.innerHTML = Footer();
 };

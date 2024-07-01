@@ -30,18 +30,25 @@ html {
 }
 
 body {
-  background-color: var(--bg-dark);
-  color: var(--primary-dark);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--bg-light);
+  color: var(--primary-light);
   transition: all 0.5s ease-in-out;
 }
 
 .light {
-  background-color: var(--bg-light);
-  color: var(--primary-light);
+  background-color: var(--bg-dark);
+  color: var(--primary-dark);
 }
 
 main {
-  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-height: 100vh;
 }
 
 a,
