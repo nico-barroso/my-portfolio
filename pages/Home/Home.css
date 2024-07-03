@@ -68,7 +68,7 @@
 
 .home > h1 {
   font-size: 5.5rem;
-  background: linear-gradient(to right, #9845e8 0%, #33d2ff 50%, #dd5789 100%);
+  background: linear-gradient(to right, #cf871b 0%, #dd5789 50%, #e8b707 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

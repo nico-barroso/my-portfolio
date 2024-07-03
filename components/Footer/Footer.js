@@ -5,7 +5,11 @@ export const Footer = () => `
 
 
 <div>
-${Button("/assets/github-mark.svg", "GitHub", "https://github.com/NickBarroso")}
+${Button(
+  "/assets/github-mark.svg",
+  "GitHub",
+  "https://github.com/nico-barroso"
+)}
 ${Button(
   "./assets/LI-In-Bug.png",
   "LinkedIn",

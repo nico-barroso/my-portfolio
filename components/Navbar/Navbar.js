@@ -24,7 +24,9 @@ export const changeText = () => {
 
 export const changeColor = () => {
   const mailIcon = document.querySelector(".mail-icon");
+  const project = document.querySelector("")
   mailIcon.classList.toggle("invert");
+
 };
 
 export const changeColorButton = () => {
@@ -36,7 +38,7 @@ export const changeColorButton = () => {
 
 export const Navbar = () => `
 <nav>
-<h2>@NickBarroso</h2>
+<h2>@nico-barroso</h2>
 <ul>
     <li>
         <a href="#" id="homelink">Inicio</a>
