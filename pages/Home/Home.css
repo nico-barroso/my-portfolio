@@ -59,10 +59,13 @@
   .mail-icon {
     display: none;
   }
+  nav {
+    display: none;
+  }
 }
 @media (max-width: 460px) {
   .home video {
-    display: none;
+    transform: translateY(-350px) rotate(-90deg);
   }
 }
 

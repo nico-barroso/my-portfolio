@@ -4,7 +4,7 @@ export const ProjectCard = (project) => `
 <div class="project-card">
 <div class=media-container>
 <!--<img src=${project.image} alt=${project.title}/>-->
-<video muted loop>
+<video muted loop playsinline webkit-playsinline>
   <source src=${project.videoImg} type="video/mp4">
 </video>
 </div>
