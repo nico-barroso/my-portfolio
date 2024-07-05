@@ -48,7 +48,7 @@ export const Projects = () => {
   // Llamar a colorChange para aplicar el filtro si es necesario
   colorChange();
 };
-
+//
 export const colorChange = () => {
   console.log("Current body class list:", document.body.classList);
   const figures = document.querySelectorAll(".projects-container figure");
