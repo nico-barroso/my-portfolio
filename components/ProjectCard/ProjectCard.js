@@ -3,8 +3,12 @@ import "./ProjectCard.css";
 export const ProjectCard = (project) => `
 <div class="project-card">
   <div class="media-container">
-    <img id="img-${project.id}" src="${project.image}" alt="${project.title}" style="display: none;"/>
-    <video id="video-${project.id}" muted loop playsinline webkit-playsinline class="shadow">
+    <img id="img-${project.id}" src="${project.image}" alt="${
+  project.title
+}" style="display: none;"/>
+    <video id="video-${
+      project.id
+    }" muted autoplay loop playsinline webkit-playsinline class="shadow">
       <source src="${project.videoImg}" type="video/mp4">
     </video>
   </div>
