@@ -67,3 +67,7 @@ export const colorChange = () => {
     });
   }
 };
+
+export const imageVideoChange = () => {};
+
+imageVideoChange();
