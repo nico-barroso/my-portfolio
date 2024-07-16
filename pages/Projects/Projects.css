@@ -1,11 +1,10 @@
 .projects {
-  padding: 0 8rem;
+  padding: 8rem;
   min-height: 80vh;
-  padding-bottom: 4rem;
+  padding-bottom: 8rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-bottom: 2rem;
 }
 
 @media (max-width: 770px) {

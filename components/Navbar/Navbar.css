@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+.hanken-grotesk {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
 nav {
   position: relative;
   z-index: 2;
@@ -7,6 +16,7 @@ nav {
   align-items: center;
   padding: 0 8rem;
   flex-wrap: wrap;
+  align-content: center;
 }
 h2 {
   font-size: 19px;
@@ -14,15 +24,84 @@ h2 {
 nav h2 {
   color: orange;
 }
+nav .icono-menu {
+  display: none;
+  width: 30px;
+}
 @media (max-width: 770px) {
   nav {
     padding: 0 2rem;
   }
+  nav .icono-menu {
+    display: block;
+  }
+  nav > *:not(.icono-menu) {
+  }
+}
+.menu-desplegado {
+  display: block;
+
+  position: absolute;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: flex-end;
+  left: 0;
+  scroll-behavior: none;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+
+  animation: moveUp 0.6s ease-in forwards, fadeIn 0.2s ease-in forwards;
+
+  > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  > ul a {
+    font-size: 3.5em;
+    text-transform: uppercase;
+  }
+  > .icono-menu {
+    position: relative;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    background-color: red;
+  }
+  h2 {
+    display: none;
+  }
 }
 
+@keyframes moveUp {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  100% {
+    left: 0; /* Ajusta la posición final según sea necesario */
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 nav > ul {
   display: flex;
   gap: 3rem;
+  left: 0;
 }
 
 nav button {
@@ -47,4 +126,12 @@ nav a:hover {
 
 .filter-none {
   filter: none;
+}
+
+#themeBtn {
+  cursor: pointer;
+}
+#themeBtn:hover {
+  transform: scale(1.7);
+  transition: all 0.3s;
 }
