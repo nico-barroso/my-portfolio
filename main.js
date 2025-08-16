@@ -6,6 +6,9 @@ import { Footer } from "./components/Footer/Footer";
 import { Home } from "./pages/Home/Home";
 import { Projects } from "./pages/Projects/Projects";
 import { Divider } from "./components/Divider/Divider";
+import { injectSpeedInsights } from "@vercel/speed-insights";
+
+injectSpeedInsights();
 
 const header = document.querySelector("header");
 header.innerHTML = Navbar();
