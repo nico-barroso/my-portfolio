@@ -13,6 +13,7 @@ export const Home = () => {
       <a href="mailto:josenicolasbarrosogarcia@gmail.com"><img class="mail-icon" src="/assets/mail-svgrepo-com.svg" alt="Icono de correo">¡No te olvides de decir hola! →</a>
       <video autoplay loop muted playsinline webkit-playsinline>
         <source src="/assets/PruebaPatoHVEC-1.mov" type="video/mp4"/> 
+         <source src="/assets/PatoSinFoindo.webm" type="video/mp4"/>
       </video>
     </section>`;
 
